@@ -5,10 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
  }
-:root {
-  --text-color: white;
-  --nav-color: #ea6c43;
-}
+
 html {
   font-size: 62.5%;
 }
@@ -18,8 +15,11 @@ body {
   overflow-x: hidden;
  
 }
+.active{
+    color: rgb(255, 217, 0);
+}
 nav {
-  background-color: var(--nav-color);
+  background-color: #ea6c43;
   width: 50%;
   margin: 10px auto;
   height: 60px;
@@ -33,7 +33,7 @@ nav ul {
 }
 nav ul li a {
   text-decoration: none;
-  color: var(--text-color);
+  color: white;
   font-weight: 700;
   font-size: 1.8rem;
 }
@@ -52,9 +52,7 @@ section{
   justify-content: space-around;
 }
 section .rightsidecontent img{
-/*  width: 500px;
-  aspect-ratio: 1;*/
-  animation: updownani 2s linear alternate infinite;
+ animation: updownani 2s linear alternate infinite;
 }
 
 @keyframes updownani {
@@ -194,6 +192,10 @@ input[type="checkbox"]:checked ~ ul {
     left: 0;
     z-index: 11;
         }
+
+#facebook:hover ,#instagram:hover , #linkedin:hover{
+  transform: translateY(-5px);
+}
 @media (max-width:1188px){
   nav{
       width: 100vw;
@@ -222,22 +224,18 @@ display: none;
 }
 .socialmedias{
     flex-direction: row;
+      order: 1;
+        justify-content: center;
+  margin-bottom: 30px;
 }
-.socialmedias{
-  order: 1;
-}
+
 .leftsidecontent{
 order: 0;
 }
 .leftsidecontent p{
   margin-top: 100px;
 }
-.socialmedias{
-  justify-content: center;
-  margin-bottom: 30px;
-}
 
-}
 
 @media (max-width:600px){
   .leftsidecontent p{
