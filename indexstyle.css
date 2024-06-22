@@ -44,14 +44,14 @@ nav ul li a:hover {
   color: rgb(255, 217, 0);
 }
 
-section{
+.indexpagemain{
   display: flex;
   align-items: center;
  flex-wrap: wrap;
   height: 100vh;
   justify-content: space-around;
 }
-section .rightsidecontent img{
+.indexpagemain .rightsidecontent img{
  animation: updownani 2s linear alternate infinite;
 }
 
@@ -209,6 +209,9 @@ position: relative;
   nav ul {
 display: none;
 
+  }
+  nav ul li{
+    margin-bottom: 25px;
   }
   #bar{
     display: block;
