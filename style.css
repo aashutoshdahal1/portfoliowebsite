@@ -48,7 +48,7 @@ nav ul li a:hover {
 .indexpagemain{
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+ flex-wrap: wrap;
   height: 100vh;
   justify-content: space-around;
 }
@@ -66,26 +66,26 @@ nav ul li a:hover {
 } 
 
 .leftsidecontent p{
- font-size: 5rem;
- font-weight: bolder;
+font-size: 5rem;
+font-weight: bolder;
 }
 
 .name{
- position: relative;
+position: relative;
 
 
 }
 
 
 .name::after {
- content: 'Aashutosh';
- overflow: hidden;
- position: absolute;
- left: 0;
- color: #ea6c43;
- border-right:2px solid #ea6c43 ; 
- width: 0;
- animation:typinganimation 2s linear infinite alternate ;
+content: 'Aashutosh';
+overflow: hidden;
+position: absolute;
+left: 0;
+color: #ea6c43;
+border-right:2px solid #ea6c43 ; 
+width: 0;
+animation:typinganimation 2s linear infinite alternate ;
 
 
  
@@ -131,10 +131,10 @@ nav ul li a:hover {
   align-items: center;
 }
 .download_cv{
- background: none;
- color: white;
- padding: 20px;
- cursor: pointer;
+  background: none;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
  border: 5px solid #ea6c43;
  border-radius: 5px;
  font-size: 2rem;
@@ -170,18 +170,18 @@ nav ul li a:hover {
 }
 .container{
   display: flex;
-  flex-direction: row;
-  gap: 50px;
+flex-direction: row;
+gap: 50px;
 
 }
 #bar{
- display: none;
+display: none;
 }
 #check{
   display: none;
 }
 input[type="checkbox"]:checked ~ ul {
-    display: flex;
+   display: flex;
     flex-direction: column;
     position: absolute;
     align-items: center;
@@ -199,16 +199,16 @@ input[type="checkbox"]:checked ~ ul {
 }
 @media (max-width:1188px){
   nav{
-  width: 100vw;
+      width: 100vw;
   margin: 10px auto;
   height: 60px;
   border-radius: 0px;
   margin: 0px auto;
-  position: relative;
+position: relative;
   }
 
   nav ul {
- display: none;
+display: none;
 
   }
   nav ul li{
@@ -229,25 +229,78 @@ input[type="checkbox"]:checked ~ ul {
 }
 .socialmedias{
     flex-direction: row;
-    order: 1;
-    justify-content: center;
-    margin-bottom: 30px;
+      order: 1;
+        justify-content: center;
+  margin-bottom: 30px;
 }
 
 .leftsidecontent{
- order: 0;
+order: 0;
 }
 .leftsidecontent p{
   margin-top: 100px;
 }
-}
+
 
 @media (max-width:600px){
   .leftsidecontent p{
-  text-align: center;
+text-align: center;
 }
   .download_cv{
   font-size: 1.5rem;
 }
 }
 
+
+main .grid_container{
+         display: grid;
+         cursor: pointer;
+         gap: 20px; 
+         padding: 20px;
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+
+
+
+}
+main .grid_container .project{
+  background-color: white;
+   border-radius: 10px 10px 20px 20px;
+   text-align: center;
+   width: 100%;
+   transition: all .5s;
+        
+
+
+}
+
+.project1{
+     width: 100%;
+
+}
+
+.project1img img{
+  width: 100%;
+
+}
+.projectinfo{
+  height: 200px;
+  width: 100%;
+  background-color: #ffffff;
+    border-radius: 0px 0px 20px 20px;
+    padding: 40px 0px;
+}
+.projectinfo p{
+  font-size: 20px;
+}
+.project:hover{
+scale: 1.02;
+box-shadow: 4px 2px 10px black;
+
+}
+.project2{
+  
+}
+.project1img img{
+  border-radius: 10px 10px 0px 0px;
+}

@@ -1,5 +1,5 @@
 body{
-    display: grid;
+  display: grid;
   place-items: center;
 
 }
@@ -8,7 +8,6 @@ form {
   margin-top: 50px;
   max-width: 1000px;
   width: 100%;
-
   background-color: red;
   display: flex;
 
@@ -17,8 +16,8 @@ form {
 .leftsideformcontent{
   background-color: #DFFFE0;
   width: 50%;
-height: 500px;
-padding: 100px 60px;
+  height: 500px;
+  padding: 100px 60px;
 }
 .leftsideformcontent p:nth-child(1){
   font-size: 40px;
@@ -49,20 +48,20 @@ padding: 100px 60px;
 .rightsideformcontent{
   background-color: #DFFFE0;
   width: 50%;
-height: 500px;
+  height: 500px;
 
 }
 .inputall{
   margin-top: 10px;
   height: 100%;
-padding: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
 }
 .inputall input{
   margin-bottom: 10px;
   padding: 10px;
-    height: 15%;
+  height: 15%;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -89,14 +88,14 @@ padding: 20px;
 @media (max-width:1188px){
 
 form{
-flex-direction: column;
-align-items: center;
+ flex-direction: column;
+ align-items: center;
 }
 .leftsideformcontent ,.rightsideformcontent {
   width: 100%;
 }
 .leftsideformcontent{
-height: 50%;
+ height: 50%;
 }
 nav{
   width: 100%;
